@@ -47,6 +47,27 @@ elif(choice==2): #elif statement
             print("Your Destination Is Chattogram-Barishal")
         elif(choice8==6):
             print("Your Destination Is Barishal-Chattogram")
+    elif(choice7==2): #if statement
+        print("Select Your Destination: ")
+        print("1. Dhaka-Chattogram")
+        print("2. Chattogram-Dhaka")
+        print("3. Dhaka-Barishal")
+        print("4. Barishal-Dhaka")
+        print("5. Chattogram-Barishal")
+        print("6. Barishal-Chattogram")
+        choice9=int(input("Enter Your Destination Route: "))
+        if(choice9==1):
+            print("Your Destination Is Dhaka-Chattogram")
+        elif(choice9==2):
+            print("Your Destination Is Chattogram-Dhaka")
+        elif(choice9==3):
+            print("Your Destination Is Dhaka-Barishal")
+        elif(choice9==4):
+            print("Your Destination Is Barishal-Dhaka")
+        elif(choice9==5):
+            print("Your Destination Is Chattogram-Barishal")
+        elif(choice9==6):
+            print("Your Destination Is Barishal-Chattogram")
 
 #user entered the Third option
 elif(choice==3): #elif statement
