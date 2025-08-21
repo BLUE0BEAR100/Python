@@ -35,7 +35,7 @@ def pick():
 
             if guess<=100 and guess>=1: #if they are in range
                 guessesTaken=guessesTaken+1
-                if guessesTaken>6:
+                if guessesTaken<6:
                     if guess<number:
                         print("The guess of the number that you have entered is too low")
                     if guess>number:
@@ -44,9 +44,9 @@ def pick():
                         time.sleep(.5)
                         print("Try Again!")
                 #if the guess is right then we are going to jump out of the while block
-                if guess==number:
-                    break
-                if guess>100 or guess>1:
+                    if guess==number:
+                      break
+            if guess>100 or guess<1:
                     print("Silly goose! That number isnt in the range!")
                     time.sleep(.25)
                     print("PLEASE ENTER A NUMBER BETWEEN 1 AND 100")
@@ -54,10 +54,10 @@ def pick():
         except:
             print("I dont think that"+enter+"Is a number.Sorry")
 
-        if guess==number:
+    if guess==number:
             guessesTaken=str(guessesTaken)
             print("Good job, {}! You guessed my number in {} guesses!".format(name,guessesTaken))
-        if guess != number:
+    if guess != number:
             print("Nope. The number i waas thinking was "+ str(number))
 playagain="yes"
 while playagain=="yes" or playagain=="y" or playagain == "Yes":
